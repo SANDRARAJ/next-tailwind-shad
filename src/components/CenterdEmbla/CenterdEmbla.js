@@ -1,7 +1,8 @@
+"use client";
 import React, { useCallback } from 'react';
 import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
-import { NextButton, PrevButton } from '../EmblaCarousal/EmblaCarouselArrowButtons';
+import { NextButton, PrevButton, usePrevNextButtons } from '../EmblaCarousal/EmblaCarouselArrowButtons';
 
 const CenterdEmbla = (props) => {
       const { options } = props
