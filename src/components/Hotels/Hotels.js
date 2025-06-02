@@ -2,11 +2,12 @@ import Image from "next/image";
 import React from "react";
 import Assets from "../Layout/CommonLayout/asset";
 import Link from "next/link";
+import EmblaCarousel from "../EmblaCarousal/EmblaCarousal";
 
 const Hotels = () => {
   return (
     <>
-      <section className="py-10 bg-[#fbf2e4]">
+      <section className="py-10 bg-[#fffcf7]">
         <div className="container">
           <Image
             src={Assets.subtitleIcon}
@@ -31,6 +32,9 @@ const Hotels = () => {
           >
             View All Hotels
           </Link>
+          <div className="mt-12 w-full">
+            <EmblaCarousel />
+          </div>
         </div>
       </section>
     </>
@@ -38,3 +42,5 @@ const Hotels = () => {
 };
 
 export default Hotels;
+
+
