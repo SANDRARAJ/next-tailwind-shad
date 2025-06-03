@@ -31,7 +31,7 @@ const SelectTab = () => {
                 <div className="flex gap-x-3">
                   <div className="basis-[calc((100%-134px)/2))] w-[calc((100%-134px)/2)]">
                     <Select className="relative">
-                      <SelectTrigger className="w-full h-12">
+                      <SelectTrigger className={'w-full'}>
                         <SelectValue placeholder="Select a fruit" />
                       </SelectTrigger>
                       <SelectContent>
@@ -48,7 +48,7 @@ const SelectTab = () => {
                   </div>
                   <div className="basis-[calc((100%-134px)/2)] w-[calc((100%-134px)/2)]">
                     <Select className="w-full">
-                      <SelectTrigger className="w-full h-12">
+                      <SelectTrigger className={'w-full'}>
                         <SelectValue placeholder="Select a fruit" />
                       </SelectTrigger>
                       <SelectContent>
@@ -72,7 +72,7 @@ const SelectTab = () => {
                 <div className="flex gap-x-3">
                   <div className="basis-[calc((100%-134px)/2))] w-[calc((100%-134px)/2)]">
                     <Select className="relative">
-                      <SelectTrigger className="w-full h-12">
+                      <SelectTrigger className={'w-full'}>
                         <SelectValue placeholder="Select a fruit" />
                       </SelectTrigger>
                       <SelectContent>
@@ -89,7 +89,7 @@ const SelectTab = () => {
                   </div>
                   <div className="basis-[calc((100%-134px)/2)] w-[calc((100%-134px)/2)]">
                     <Select className="w-full">
-                      <SelectTrigger className="w-full h-12">
+                      <SelectTrigger className={'w-full'}>
                         <SelectValue placeholder="Select a fruit" />
                       </SelectTrigger>
                       <SelectContent>
@@ -105,7 +105,7 @@ const SelectTab = () => {
                     </Select>
                   </div>
                   <div className="basis-[110px]">
-                    <Button className="w-full">Book Now</Button>
+                    <Button className="w-full h-12">Book Now</Button>
                   </div>
                 </div>
               </TabsContent>

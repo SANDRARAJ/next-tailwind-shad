@@ -13,6 +13,7 @@ import Assets from "../Layout/CommonLayout/asset";
 const EmblaCarousel = (props) => {
   const { options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
+  const endSlider = props.isEndSlider;
 
   const onNavButtonClick = useCallback((emblaApi) => {
     const autoplay = emblaApi?.plugins()?.autoplay;
@@ -77,18 +78,18 @@ const EmblaCarousel = (props) => {
   ];
 
   return (
-    <section className="embla">
-      <div className="embla__viewport" ref={emblaRef}>
+    <section className={`embla `}>
+      <div className={`embla__viewport pb-10 ${endSlider ? "overflow-visible" : ""}`} ref={emblaRef}>
         <div className="embla__container">
           {slides.map((data, index) => (
-            <div className="embla__slide" key={index}>
+            <div className={`embla__slide ${endSlider ? "w-2/3 !basis-2/3" : ""}`} key={index}>
               <Card data={data} />
             </div>
           ))}
         </div>
       </div>
 
-      <div className="embla__controls">
+      <div className="flex justify-end gap-1">
         <div className="embla__buttons">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
