@@ -10,7 +10,7 @@ const Card = ({data}) => {
             <Image src={data?.img} alt={data?.alt} fill className='object-cover' />
         </figure>
         <h3 className='text-[#50505d] text-2xl font-normal mb-4'>{data?.title}</h3>
-        <p className="text-lg mb-4">{data?.content}</p>
+        <p className="text-lg mb-4 line-clamp-2">{data?.content}</p>
         <Link href={'/'} className='text-[#c4ab82] underline hover:text-[#0056b3] underline-offset-2 transition-all duration-300 ease-in-out'>{data?.button_text}</Link>
     </div>
   )

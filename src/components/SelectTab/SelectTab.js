@@ -28,8 +28,8 @@ const SelectTab = () => {
                 </TabsTrigger>
               </TabsList>
               <TabsContent value="play">
-                <div className="flex gap-x-3">
-                  <div className="basis-[calc((100%-134px)/2))] w-[calc((100%-134px)/2)]">
+                <div className="flex flex-wrap gap-3">
+                  <div className=" basis-full  w-full lg:basis-[calc((100%-142px)/2))] lg:w-[calc((100%-142px)/2)]">
                     <Select className="relative">
                       <SelectTrigger className={'w-full'}>
                         <SelectValue placeholder="Select a fruit" />
@@ -46,7 +46,7 @@ const SelectTab = () => {
                       </SelectContent>
                     </Select>
                   </div>
-                  <div className="basis-[calc((100%-134px)/2)] w-[calc((100%-134px)/2)]">
+                  <div className=" basis-full  w-full lg:basis-[calc((100%-142px)/2))] lg:w-[calc((100%-142px)/2)]">
                     <Select className="w-full">
                       <SelectTrigger className={'w-full'}>
                         <SelectValue placeholder="Select a fruit" />
@@ -63,7 +63,7 @@ const SelectTab = () => {
                       </SelectContent>
                     </Select>
                   </div>
-                  <div className="basis-[110px]">
+                  <div className="w-full basis-full lg:basis-[110px]">
                     <Button className="w-full">Book Now</Button>
                   </div>
                 </div>

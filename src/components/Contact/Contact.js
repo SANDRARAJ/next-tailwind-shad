@@ -8,9 +8,9 @@ import Link from "next/link";
 const Contact = () => {
   return (
     <>
-      <section className="py-10 h-[920px]">
+      <section className="py-10 min-h-[1250px] lg:min-h-[920px]">
         <div className="grid grid-cols-2 gap-x-10">
-          <div className="pt-40 pl-24">
+          <div className="pt-10 px-4 lg:px-0 lg:pt-40 lg:pl-24 col-span-2 lg:col-span-1">
             <Image
               src={Assets.subtitleIcon}
               width={86}
@@ -21,10 +21,10 @@ const Contact = () => {
             <p className="mb-4 text-[#50505D] text-base uppercase font-light">
               Restaurants
             </p>
-            <h3 className="mb-2 text-[40px] text-[#c4ab82] font-normal leading-normal max-w-2/3">
+            <h3 className="mb-2 text-3xl lg:text-[40px] text-[#c4ab82] font-normal leading-normal max-w-2/3">
               Dine
             </h3>
-            <p className="text-2xl leading-normal text-[#17171c] max-w-3/4 mb-12">
+            <p className="text-lg lg:text-2xl leading-normal text-[#17171c] max-w-full lg:max-w-3/4 mb-12">
               Indulge in a culinary journey from sumptuous lunches to
               unforgettable evenings.
             </p>
@@ -35,8 +35,8 @@ const Contact = () => {
               View All Restaurants
             </Link>
           </div>
-          <div className="relative ">
-            <div className="absolute left-0 top-0">
+          <div className="relative mt-10  lg:mt-0 col-span-2 lg:col-span-1 px-4">
+            <div className="absolute lg:left-0 top-0 w-full">
               <EmblaCarousel isEndSlider />
             </div>
           </div>

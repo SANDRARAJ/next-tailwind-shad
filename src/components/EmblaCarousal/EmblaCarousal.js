@@ -90,7 +90,7 @@ const EmblaCarousel = (props) => {
       </div>
 
       <div className="flex justify-end gap-1">
-        <div className="embla__buttons">
+        <div className={`embla__buttons ${endSlider ? "pr-8 lg:pr-0" : ""}`}>
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>

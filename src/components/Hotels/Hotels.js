@@ -5,10 +5,12 @@ import Link from "next/link";
 import EmblaCarousel from "../EmblaCarousal/EmblaCarousal";
 
 const Hotels = () => {
+
+
   return (
     <>
       <section className="py-10 bg-[#fffcf7]">
-        <div className="container">
+        <div className={`container`}>
           <Image
             src={Assets.subtitleIcon}
             width={86}
@@ -19,10 +21,10 @@ const Hotels = () => {
           <p className="mb-4 text-[#50505D] text-base uppercase font-light">
             our hotels
           </p>
-          <h3 className="mb-2 text-[40px] text-[#c4ab82] font-normal leading-normal">
+          <h3 className="mb-2 text-3xl lg:text-[40px] text-[#c4ab82] font-normal leading-normal">
             From ultimate exclusivity to endless celebrations
           </h3>
-          <p className="text-2xl leading-snug mb-4 text-[#17171c] max-w-3/4">
+          <p className="text-lg lg:text-2xl leading-snug mb-4 text-[#17171c] max-w-full lg:max-w-3/4">
             There’s a stay for all at Resorts World Sentosa and a hotel to match
             the experience from ultimate exclusivity to endless celebrations.
           </p>

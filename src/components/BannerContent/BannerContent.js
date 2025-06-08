@@ -9,7 +9,7 @@ const BannerContent = () => {
         <div className="mx-auto w-[180px] h-[25px] mb-6">
           <Image src={Assets.titleIcon} alt="titleIcon" width={180} height={25} />
         </div>
-        <h3 className="text-center text-2xl font-normal leading-normal text-[#50505D] max-w-1/3 mx-auto">
+        <h3 className="text-center text-2xl font-normal leading-normal text-[#50505D] max-w-full sm:max-w-2/3 lg:max-w-1/3 mx-auto">
           Your Home of World-Class Attractions, Hotels, Events and Dining
           Experiences
         </h3>

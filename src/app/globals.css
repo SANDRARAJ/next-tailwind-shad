@@ -127,7 +127,18 @@
   --slide-height: 19rem;
   --slide-spacing: 1rem;
   --slide-size: 33.33%;
+
+  @media (max-width:991.98px){
+    --slide-size: 50%;
+  }
+  
+  @media (max-width:575.98px){
+    --slide-size: 75%;
+  }
+  
 }
+
+
 .embla__viewport {
   overflow: hidden;
 }
@@ -211,12 +222,10 @@
     padding: 0 16px;
     margin: 0 auto;
 
-    @media (min-width:576px){
-        max-width: 540px;
+    @media (min-width:1px){
+        max-width: 100%;
     }
-    @media (min-width:768px){
-        max-width: 720px;
-    }
+
     @media (min-width:992px){
         max-width:960px;
     }
